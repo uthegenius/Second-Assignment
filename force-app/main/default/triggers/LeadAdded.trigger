@@ -1,4 +1,4 @@
-trigger AccountAdded on Lead (before insert, after insert, before update, after update) {
+trigger LeadAdded on Lead (before insert, after insert, before update, after update) {
 if(Trigger.isInsert){
     if(Trigger.isBefore){
         List<Lead> leads = Trigger.New;
